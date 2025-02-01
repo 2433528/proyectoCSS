@@ -1,0 +1,43 @@
+
+
+$principal:rgb(201, 135, 201);
+$azul:#03a9f4;
+
+
+.nav-link{
+    color: white !important;
+}
+
+
+#layoutSidenav_nav{
+    
+    background-color: #212529;
+    
+    div{
+        color: white;
+    }
+}
+
+.nav{
+    margin: 1em 1.5em;
+}
+
+#layoutSidenav_content{
+    background-image: linear-gradient(90deg, rgb(243, 159, 205) 30%,#f5f3a6,rgb(183, 228, 240));
+}
+
+.sb-topnav{
+    background-color: black !important;
+}
+
+#sidebarToggle{
+    color: white !important;
+}
+
+h1{
+    color: white;
+}
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+
