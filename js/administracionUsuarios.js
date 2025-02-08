@@ -165,18 +165,21 @@ function obtenerPublicaciones(){
           nombre:'Formatos de imagenes',
           idUsuarioPub:'2',
           pagina:'PublicacionImagenesWeb.html',
+          fecha:'02/02/2025'
         },
         {
           id:1,
           nombre:'',
-          idUsuarioPub:'1',
-          pagina:''
+          idUsuarioPub:'',
+          pagina:'',
+          fecha:'01/01/2025'
         },
         {
           id:2,
           nombre:'',
           idUsuarioPub:'8',
           pagina:'',
+          fecha:'25/01/2025'
         },
       ]
     localStorage.setItem('publicaciones',JSON.stringify(publicaciones));
@@ -196,21 +199,51 @@ bloquear=document.querySelectorAll('.bloquear');
 eliminar=document.querySelectorAll('.eliminar');
 editar=document.querySelectorAll('.modificar');
 publicaciones=document.querySelectorAll('.publicaciones');
+let bloqueado;
 
 bloquear.forEach((btn)=>{
-    btn.addEventListener('click',()=>{
-        btn.classList.toggle('btn-secondary');
+    btn.addEventListener('click',(e)=>{
+      let block=document.querySelector(`#${e.target.id}`).classList;
+      if (!bloqueado){
+        console.log(block.contains('bg-secondary'))
+        if(window.confirm("El usuario será bloqueado ¿Deseas continuar?")) {        
+          document.querySelector(`#${block[0]}`).classList.toggle('bg-secondary');
+          document.querySelector(`#${block[0]}`).classList.toggle('opacity-25');
+          const alerta=document.querySelector('.alerta');
+            alerta.innerHTML=`
+              <div class="alert alert-info alert-dismissible" role="alert">
+                <div>EL usuario ha sido bloqueado</div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+          `
+          bloqueado=true;
+        } 
+      }else{
+        document.querySelector(`#${block[0]}`).classList.toggle('bg-secondary');
+        document.querySelector(`#${block[0]}`).classList.toggle('opacity-25');
+        bloqueado=false;
+      }
+      
     });
 })
 
 eliminar.forEach((btn)=>{
    
     btn.addEventListener('click',(e)=>{
+      if(window.confirm("El usuario será borrado ¿Deseas continuar?")) {
         let rm=document.querySelector(`#${e.target.id}`).classList;
+        const alerta=document.querySelector('.alerta');
+        alerta.innerHTML=`
+          <div class="alert alert-danger alert-dismissible" role="alert">
+            <div>EL usuario ha sido borrado de forma permanente</div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `
         usuarios=usuarios.filter(u=>u.id!=rm[1]);
         console.log(usuarios)
         document.querySelector(`#${rm[0]}`).remove();   
         localStorage.setItem('usuarios',JSON.stringify(usuarios));
+      }
     });
 })
 
