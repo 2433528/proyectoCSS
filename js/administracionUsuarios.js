@@ -164,21 +164,21 @@ function obtenerPublicaciones(){
           id:0,
           nombre:'Formatos de imagenes',
           idUsuarioPub:'2',
-          pagina:'PublicacionImagenesWeb.html',
+          pagina:'publicacionImagenesWeb.html',
           fecha:'02/02/2025'
         },
         {
           id:1,
-          nombre:'',
-          idUsuarioPub:'',
-          pagina:'',
+          nombre:'Propiedades imagenes CSS',
+          idUsuarioPub:'2',
+          pagina:'publicacionPropiedades.html',
           fecha:'01/01/2025'
         },
         {
           id:2,
-          nombre:'',
+          nombre:'Filtros en CSS',
           idUsuarioPub:'8',
-          pagina:'',
+          pagina:'publicacionFiltros.html',
           fecha:'25/01/2025'
         },
       ]

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Propiedades-Imagenes-CSS</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"><img src="./imagenes/logo.png" alt="logo"></div>
+            <h1>Sapientia-Dev</h1>
+        </div>
+        <div class="log">
+            <p class="login">Login</p>
+        </div>    
+    </header>
+    <main>
+        <!-- Boton para volver -->
+        <a class="volver" href="index.html">&#x21e6 Volver</a>
+
+        <!-- Imagen de la cabecera -->
+        <div class="portada"></div>
+
+        <!-- Imangen principal y titulos de la entrada -->
+
+        <div class="mb-3 p-3" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">              
+              <div class="col-md-6 p-5">
+                <div class="card-body">
+                  <h3 class="card-title">Propiedades de imagenes en CSS</h3>
+                  <ul>
+                    <li>background-image</li>
+                    <li>background-size</li>
+                    <li>background-repeat</li>
+                    <li>background-position</li>
+                    <li>background-origin</li>
+                    <li>background-clip</li>
+                    <li>background-attachment</li>
+                    <li>background-color</li>                
+                </ul>
+                </div>
+              </div>
+              <div class="col-md-6 p-5">
+                <img src="./imagenes/pcCSS.png" class="img-fluid rounded" alt="...">
+              </div>
+            </div>
+          </div>
+
+        <!-- ********************************************* -->
+
+        <div class="subtitulo d-flex justify-content-center"><h4>¿Cuáles son sus caracteristicas?</h4></div>
+
+        <!-- Diferentes secciones -->
+
+        
+        <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 p-4 justify-content-center">
+              <div class="col-md-5 p-4">
+                <img src="./imagenes/nobaddays2.png" class="img-fluid rounded-3 sectionImageReverse" alt="..." style="width: 20em; height: 15em;">
+              </div>
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-image</h4>                    
+                    <p>Usando esta propiedad, podemos añadir imágenes a lo largo de nuestra hoja de estilos. Solo tendremos que indicar la URL al destino de la imagen.</p>                      
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">              
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-size</h4>                    
+                    <p>Con esta propiedad podremos ajustar el tamaño de la imagen. Sus principales valores son:</p>
+                    <ul>
+                        <li><strong>cover/contain:</strong> El primero expande la imagen en toda la superficie del elemento que la contenga, mientras que el segundo, mantiene el tamaño de la imagen independientemente de que el elemento contenedor cambie.</li>
+                        <li><strong>Establecer el alto y ancho de la imagen:</strong> Podemos indicar directamente el ancho y alto de la imagen.</li>
+                        <li><strong>Usar auto:</strong> La imagen estaria siempre en su tamaño original, aunque cambiemos el tamaño de la ventana.</li>
+                    </ul> 
+                </div>
+              </div>
+              <div class="col-md-5 p-5">
+                <img src="./imagenes/cintametrica.png" class="img-fluid rounded-3 sectionImage" alt="..." style="width: 20em; height: 15em;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">
+              <div class="col-md-5 p-4">
+                <img src="./imagenes/formatoImagenes.png" class="img-fluid rounded-3 sectionImageReverse" alt="..." style="width: 20em; height: 15em;">
+              </div>
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-repeat</h4>                    
+                    <p>Esta propiedad nos permite repetir la imagen múltiples veces.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">              
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-position</h4>                    
+                    <p>Esta propiedad es usada para cambiar la posición de la imagen en la pantalla.</p>                   
+                </div>
+              </div>
+              <div class="col-md-5 p-5">
+                <img src="./imagenes/posicionMapa.png" class="img-fluid rounded-3 sectionImage" alt="..." style="width: 20em; height: 15em;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">
+              <div class="col-md-5 p-4">
+                <img src="./imagenes/plantaBrotando.png" class="img-fluid rounded-3" alt="..." style="width: 20em; height: 15em;">
+              </div>
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-origin</h4>                    
+                    <p>Esta propiedad nos permite establecer el origen de nuestra imagen a través del CSS box model.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">              
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-clip</h4>                    
+                    <p>Esta propiedad es igual a background-origin. Pero la principal diferencia es que background-clip CORTA la imagen para que quepa dentro del cuadro, mientras background-origin EMPUJA el contenido dentro del cuadro para que quepa.</p>                                    
+                </div>
+              </div>
+              <div class="col-md-5 p-5">
+                <img src="./imagenes/clip.png" class="img-fluid rounded-3 sectionImageReverse" alt="..." style="width: 20em; height: 15em;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">
+              <div class="col-md-5 p-4">
+                <img src="./imagenes/nudo.png" class="img-fluid rounded-3 sectionImageReverse" alt="..." style="width: 20em; height: 15em;">
+              </div>
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-attachment</h4>                    
+                    <p>Esta propiedad nos permite manejar el comportamiento de nuestro contenido e imagen cuando hacemos scroll.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 p-4" style="max-width: 100%;">
+            <div class="row g-0 justify-content-center">              
+              <div class="col-md-5 p-4">
+                <div class="card-body">
+                    <h4 class="card-title">background-color</h4>                    
+                    <p>Podemos usar esta propiedad para establecer el color de fondo de nuestros elementos.</p>                   
+                </div>
+              </div>
+              <div class="col-md-5 p-5">
+                <img src="./imagenes/arboles.png" class="img-fluid rounded-3 sectionImage" alt="..." style="width: 20em; height: 15em;">
+              </div>
+            </div>
+          </div>
+
+          <div class="subtitulo"><h4>Objetos en CSS</h4></div>
+          <div class=" d-flex p-5">
+            <img src="./imagenes/lata.png" class="img-fluid rounded-3 sectionImageReverse" alt="..." style="width: 100%; height: 15em;">
+          </div>
+
+          <div class="container">
+            <div class="row">
+
+              <div class=" col p-4" style="max-width: 100%;">
+                <div class="row g-0 justify-content-center">                  
+                  <div class="col-md-12 p-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Object-fit</h4>                    
+                        <p>Esta propiedad nos permite cambiar el modo en el que se rellena o adapta una imagen en su contenedor padre o en si mismo.Puede tomar los siguientes valores:</p>
+                        <ul>
+                          <li><strong>Fill:</strong> Rellena la imagen ocupando todo el espacio.</li>
+                          <li><strong>Cover</strong>:</strong> Mantiene la proporcion ocupando lo máximo posible, sin que queden huecos por cubrir.</li>
+                          <li><strong>Contain:</strong> Mantiene proporción, conteniendo el máximo posible de la imagen. Suelen sobrar partes.</li>
+                          <li><strong>None:</strong> Mantiene el aspecto natural.</li>
+                          <li><strong>Scale-down:</strong> Similar a contain, pero si la imagen es más pequeña, no la amplía.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col p-4" style="max-width: 100%;">
+                <div class="row g-0 justify-content-center">              
+                  <div class="col-md-12 p-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Object-position</h4>                    
+                        <p>Junto a la propiedad <strong>object-fit</strong> podemos cambiar la posición donde aparece la imagen, especialmente cuando está recortada y sólo aparece un fragmento o parte de la imagen. La propiedad funciona de forma muy parecida a como lo hace la propiedad <strong>background-position</strong></p>                   
+                        <ul>
+                          <li><strong>50% 50%:</strong> Por defecto, la imagen está centrada tanto en X como en Y.</li>
+                          <li><strong>% %:</strong> Se puede indicar un porcentaje para colocarlo en el eje correspondiente.</li>                          
+                      </ul>
+                      <p>También se pueden indicar palabras clave como <strong>top</strong>, <strong>left</strong>, <strong>right</strong>, <strong>bottom</strong> o <strong>center</strong> para indicar en que zona quieres centrar la imagen.</p>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+    
+              <div class="col p-4" style="max-width: 100%;">
+                <div class="row g-0 justify-content-center">                  
+                  <div class="col-md-12 p-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Object-view-box</h4>                    
+                        <p>Esta propiedad permite indicar al navegador la región visible de un elemento a visualizar, es decir, la caja de visualización. Con esta herramienta a nuestra disposición, podremos mostrar sólo una parte de una imagen o video.
+                          Para ello utilizaremos la función <strong>inset()</strong> que determinar la región a recortar. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="imagenPiePagina"></div>       
+    </main>
+    <footer>        
+            <div class="container">
+                <div class="row">
+                    <div class="col text-white">
+                        <h6>Contacto</h6> 
+                         <ul class="text-white" >
+                             <li>Av. Fray A. Alcalde 10 <br> 44100 Guad., Jal., México</li>                             
+                             <li>Consultas generales: <br>+52-1-33-12345678<br></li>            
+                         </ul>
+                     </div>
+                     <div class=" col text-white">
+                         <h6>Enlaces rápidos</h6> 
+                          <ul class="text-white">
+                              <li><a href="#">Términos y condiciones</a></li>
+                              <li><a href="#">Política de Privacidad</a></li>
+                          </ul>
+                      </div>
+                      <div class="col text-white">
+                         <h6>Seguir</h6> 
+                          <p>Suscríbete y recibe las últimas noticias de los productos.</p>
+                    
+                         <form class="d-flex">
+                             <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email">                                                       
+                               </div>
+                               <div class="mb-3">
+                                <button type="submit" class="btn btn-light">Enviar</button> 
+                               </div>
+                               
+                         </form>
+                      </div>
+                      <div class="col">
+                          <ul>
+                              <li><a href="#">LinkedIn</a></li>
+                              <li><a href="#">YouTube</a></li>
+                              <li><a href="#">Facebook</a></li>
+                          </ul>
+                      </div>
+                </div>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
