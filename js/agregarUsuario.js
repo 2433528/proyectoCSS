@@ -34,4 +34,6 @@ form.addEventListener('submit',(e)=>{
         }
     })
 
+    location.href="usuarios.html";
+
 })
