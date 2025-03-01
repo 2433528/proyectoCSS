@@ -32,7 +32,7 @@ function crearTabla(){
 /* Funciones para obtener los datos    */
 
 function obtenerDatos(){
-    
+  usuarios=JSON.parse(localStorage.getItem('usuarios')); 
     if (!usuarios){
         usuarios=[
             {
@@ -240,7 +240,6 @@ eliminar.forEach((btn)=>{
           </div>
         `
         usuarios=usuarios.filter(u=>u.id!=rm[1]);
-        console.log(usuarios)
         document.querySelector(`#${rm[0]}`).remove();   
         localStorage.setItem('usuarios',JSON.stringify(usuarios));
       }

@@ -65,40 +65,40 @@
                     <h1 class="mt-4 mb-4">Nuevo Usuario</h1>                                                           
                     <div class="card p-5">
                         <div id="datosUsuario"></div>                               
-                        <form>
+                        <form id="enviar">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" autofocus>                              
+                                <input type="text" class="form-control" id="nombre" autofocus required>                              
                               </div>
                               <div class="mb-3">
                                 <label for="lastname" class="form-label">Apellidos</label>
-                                <input type="text" class="form-control" id="lastname">                              
+                                <input type="text" class="form-control" id="lastname" required>                              
                               </div>
                               <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email">                              
+                                <input type="email" class="form-control" id="email" required>                              
                               </div>
                             <div class="mb-3">
                               <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento (dd-mm-yyyy)</label>
-                              <input type="text" class="form-control" id="fechaNacimiento">                              
+                              <input type="text" class="form-control" id="fechaNacimiento" required>                              
                             </div>
                             <div class="mb-3">
                                 <label for="pais" class="form-label">Pais de Residencia</label>
-                                <input type="text" class="form-control" id="pais">
+                                <input type="text" class="form-control" id="pais" required>
                               </div>
                               <div class="mb-3">
                                 <label for="ciudad" class="form-label">Ciudad de Residencia</label>
-                                <input type="text" class="form-control" id="ciudad">
+                                <input type="text" class="form-control" id="ciudad" required>
                               </div>
                             <div class="mb-3">
                               <label for="password" class="form-label">Contraseña</label>
-                              <input type="password" class="form-control" id="password">
+                              <input type="password" class="form-control" id="password" required>
                             </div>
                             <div class="mb-3">
                                 <label for="repeatpassword" class="form-label">Indica la contraseña de nuevo</label>
-                                <input type="password" class="form-control" id="repeatpassword">
+                                <input type="password" class="form-control" id="repeatpassword" required>
                               </div>                            
-                            <button type="submit" class="btn btn-dark">Enviar</button>
+                              <input type="submit" value="Enviar" class="btn btn-dark">
                           </form>
                     </div>                                    
                 </div>
@@ -115,6 +115,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-    <script src="./js/administracionUsuarios.js"></script>     
+    <script src="./js/administracionUsuarios.js"></script>
+    <script src="./js/agregarUsuario.js"></script>    
 </body>
 </html>
