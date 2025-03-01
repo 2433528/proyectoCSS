@@ -62,26 +62,23 @@
             <main>
                
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4 mb-4">Usuarios</h1>
+                    <h1 class="mt-4 mb-4">Publicaciones</h1>
 
                     <div class="alerta"></div>
-
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a id="add" class="bg-dark text-white p-2 mb-2 rounded btn" href="agregarUsuario.html">&#x271a AddUser</a>                       
-                      </div>                                          
+                                                         
                     <div class="card mb-4">                                
                         <div class="table-responsive card-body">                              
                             <table class="table table-responsive text-center">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th>Nombre</th>
+                                        <th>Nombre Publicación</th>
+                                        <th>Usuario</th>
+                                        <th>Fecha</th>
                                         <th>Bloquear</th>                                        
-                                        <th>Modificar</th> 
-                                        <th>Publicaciones</th>
-                                        <th>Eliminar</th>
+                                        <th>Visualizar</th> 
                                     </tr>
                                 </thead>
-                                <tbody id="usersTable">
+                                <tbody id="table">
                                     <!-- Espacio para crear la tabla -->                                                          
                                 </tbody>
                             </table>
@@ -104,6 +101,7 @@
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>    
-    <script src="./js/administracionUsuarios.js"></script>
+   <!--  <script src="./js/administracionUsuarios.js" type="module"></script>  -->
+    <script src="./js/publicaciones.js" type="module"></script>     
 </body>
 </html>

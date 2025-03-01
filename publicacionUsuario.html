@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Usuarios</title>
+        <title>Publicaciones-Usuarios</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/estilos.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
@@ -46,11 +46,14 @@
                             Dashboard
                         </a>
                         <div class="sb-sidenav-menu-heading">Interface</div>
-                        <a class="nav-link" href="usuarios.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        <a class="nav-link" href="publicaciones.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                             Usuarios
                         </a>
-                                                 
+                        <a class="nav-link" href="usuarios.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                            Publicaciones
+                        </a>                        
                 </div>
                 
             </nav>
@@ -63,19 +66,21 @@
                     
                     <div class="card p-5">
                         <div id="datosUsuario"></div>
-                        <table class="table table-responsive text-center">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>Nombre Publicación</th>
-                                    <th>Fecha</th>
-                                    <th>Bloquear</th>                                        
-                                    <th>Visualizar</th> 
-                                </tr>
-                            </thead>
-                            <tbody id="datosPublicaciones">
-                                <!-- Espacio para crear la tabla -->                                                          
-                            </tbody>
-                        </table>                                                      
+                        <div class="table-responsive">
+                            <table class="table text-center">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Nombre Publicación</th>
+                                        <th>Fecha</th>
+                                        <th>Bloquear</th>                                        
+                                        <th>Visualizar</th> 
+                                    </tr>
+                                </thead>
+                                <tbody id="datosPublicaciones">
+                                    <!-- Espacio para crear la tabla -->                                                          
+                                </tbody>
+                            </table>  
+                        </div>                                                    
                     </div>                                    
                 </div>
             </main>
