@@ -15,8 +15,8 @@ if(publicaciones){
                 <td>${p.nombre}</td>
                 <td>${usuario[0].name}</td>
                 <td>${p.fecha}</td>    
-                <td><button id="b${p.id}" class="tr${p.id} ${p.id} bloquear btn btn-outline-dark me-2">&#x1f6c7;</button></td>
-                <td><button id="b${p.id}" class="tr${p.id} ${p.id} visualizar btn btn-outline-dark">&#x1f453;&#xfe0e;</button></td>    
+                <td><button id="b${p.id}" class="tr${p.id} ${p.id} bloquear btn btn-outline-dark me-2"><i class="fas fa-ban"></i></button></td>
+                <td><button id="b${p.id}" class="tr${p.id} ${p.id} visualizar btn btn-outline-dark"><i class="fas fa-glasses"></i></button></td>    
             </tr>
             `
     })

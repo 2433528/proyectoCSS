@@ -18,10 +18,10 @@ function crearTabla(){
             tabla.innerHTML +=`
                 <tr id="tr${id}">
                     <td id="td${id}" class="nombre align-middle">${name} ${lastname}</td>                                        
-                    <td><button id="b${id}" class="tr${id} ${id} bloquear btn btn-outline-dark">&#x1f6c7;</button></td>
-                    <td><button id="b${id}" class="tr${id} ${id} modificar btn btn-outline-dark">&#x270e</button></td>
-                    <td><button id="b${id}" class="tr${id} ${id} publicaciones btn btn-outline-dark">&#x1f56e;</button></td>
-                    <td><button id="b${id}" class="tr${id} ${id} eliminar btn btn-outline-dark">&#x2715</button></td> 
+                    <td><button id="b${id}" class="tr${id} ${id} bloquear btn btn-outline-dark"><i class="fas fa-ban"></i></button></td>
+                    <td><button id="b${id}" class="tr${id} ${id} modificar btn btn-outline-dark"><i class="fas fa-pencil"></i></button></td>
+                    <td><button id="b${id}" class="tr${id} ${id} publicaciones btn btn-outline-dark"><i class="fas fa-book-open"></i></button></td>
+                    <td><button id="b${id}" class="tr${id} ${id} eliminar btn btn-outline-dark"><i class="fas fa-xmark"></i></button></td> 
                 </tr>
           `    
         })
