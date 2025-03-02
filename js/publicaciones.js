@@ -7,6 +7,8 @@ let usuario;
 
 if(publicaciones){
     let tabla=document.querySelector('#table')
+    publicaciones.sort((a,b)=>Date.parse(reverseString(b.fecha))-Date.parse(reverseString(a.fecha)))
+    console.log(reverseString(publicaciones[0].fecha))
 
     publicaciones.forEach((p)=>{
         usuario=usuarios.filter((u)=>p.idUsuarioPub==u.id)
@@ -56,3 +58,10 @@ if(publicaciones){
       location.href=`${publicacion[0].pagina}`;
     });
   })
+
+
+  function reverseString(str) {
+    let cadena = str.split("/");
+  
+    return cadena.reverse().join("-");
+  }
