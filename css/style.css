@@ -16,6 +16,10 @@ a.nav-link{
     color: #fff !important;
 }
 
+ul.show{
+    position: absolute !important;
+}
+
 a.nav-link:hover{
     color: #fff !important;
 }
@@ -77,6 +81,10 @@ header div:nth-child(1){
     display: flex;
     margin: 0.8em;
     align-items: center;
+}
+
+.dropdown-menu{
+    position: absolute;
 }
 
 .portada{
