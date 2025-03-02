@@ -5,10 +5,11 @@ let contenedor;
 
 if (usuario){
     contenedor=document.querySelector('#datosUsuario');
-      const {name}=usuario[0];
+      const {name,lastname,email}=usuario[0];
       contenedor.innerHTML=`
       <ul class="list-group mb-4">
-        <li class="list-group-item"><strong>Usuario:</strong> ${name}</li>
+        <li class="list-group-item"><strong>Usuario:</strong> ${name} ${lastname}</li>
+        <li class="list-group-item"><strong>Email:</strong> ${email}</li>
       </ul>
       <div id="lista" class="list-group"></div>
       `
