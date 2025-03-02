@@ -16,6 +16,7 @@ if (usuario){
 
 if(publicaciones){
   let publicacion=publicaciones.filter((p)=>p.idUsuarioPub==usuario[0].id);
+  publicaciones.sort((a,b)=>Date.parse(reverseString(b.fecha))-Date.parse(reverseString(a.fecha)))
   let tabla=document.querySelector('#datosPublicaciones')
   publicacion.forEach(p => {
     tabla.innerHTML+=`
@@ -63,3 +64,10 @@ visualizar.forEach((btn)=>{
     location.href=`${publicacion[0].pagina}`;
   });
 })
+
+
+function reverseString(str) {
+  let cadena = str.split("/");
+
+  return cadena.reverse().join("-");
+}
